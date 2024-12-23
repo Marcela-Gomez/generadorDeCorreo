@@ -20,7 +20,7 @@ msg['to'] = destinatario
 with open('message.html', 'r') as archivo:
     html = archivo.read()
 
-msg.attach(MIMEText(html, 'html'))
+msg.attach(MIMEText(html, 'html',"utf-8"))
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
