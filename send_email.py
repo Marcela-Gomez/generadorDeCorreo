@@ -6,26 +6,29 @@ from email.mime.text import MIMEText
 
 load_dotenv()
 
-remitente = os.getenv('user')
+try:
+    remitente = os.getenv('user')
+    contraseña = os.getenv('password')
+    destinatario = 'margomez45sarai@gmail.com'
+    asunto = 'Bienvenido a DYGAV'
 
-destinatario = 'margomez45sarai@gmail.com'
-asunto = 'Bienvenido a DYGAV'
+    msg = MIMEMultipart()
 
-msg = MIMEMultipart()
+    msg['Subject'] = asunto
+    msg['from'] = remitente
+    msg['to'] = destinatario
 
-msg['Subject'] = asunto
-msg['from'] = remitente
-msg['to'] = destinatario
+    with open('message.html', 'r') as archivo:
+        html = archivo.read()
 
-with open('message.html', 'r') as archivo:
-    html = archivo.read()
+    msg.attach(MIMEText(html, 'html',"utf-8"))
 
-msg.attach(MIMEText(html, 'html',"utf-8"))
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(remitente, contraseña)
 
-server = smtplib.SMTP('smtp.gmail.com', 587)
-server.starttls()
-server.login(remitente, os.getenv('password'))
+    server.sendmail(remitente,destinatario,msg.as_string())
 
-server.sendmail(remitente,destinatario,msg.as_string())
-
-server.quit()
+    server.quit()
+except Exception as e:
+    print(e)
