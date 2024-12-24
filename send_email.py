@@ -3,13 +3,15 @@ import os
 from dotenv import load_dotenv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import logging
+import logging.config
 
 load_dotenv()
 
 try:
     remitente = os.getenv('user')
     contraseña = os.getenv('password')
-    destinatario = 'margomez45sarai@gmail.com'
+    destinatario = 'marcelasaraigomezcanas@gmail.com'
     asunto = 'Bienvenido a DYGAV'
 
     msg = MIMEMultipart()
@@ -31,4 +33,5 @@ try:
 
     server.quit()
 except Exception as e:
-    print(e)
+    logger = logging.getLogger('simpleExample')
+    logger.error("Error: El correo no se envio")
