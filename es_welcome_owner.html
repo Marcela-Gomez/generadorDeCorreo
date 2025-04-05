@@ -1,126 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>DYGAV | Recovery password</title>
-    <style type="text/css">
-        body {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            font-family: Arial, sans-serif; 
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Correo DYGAV</title>
+    <style>
+      /* Reset básico para que no se desborde */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+    
+      body {
+        margin: 0;
+        background: #e0e0e0;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        padding: 20px; /* <-- esto crea ese espacio gris a los lados */
+      }
+    
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 85% !important;
+          padding: 10px !important;
         }
-
-        table{
-            border-collapse: collapse; /* Quita el espacio entre bordes de celdas */
-            border-spacing: 0; /* Quita el espacio entre bordes de celdas */
+        .image-header img,
+        .envelope-image img {
+          width: 100% !important;
+          height: auto !important;
         }
-        td{
-            background-color: #F4511E;
-            padding-top: 5px;
-            padding-bottom: 5px;
+        .button {
+          width: 100% !important;
+          padding: 10px 0 !important;
         }
-        th {
-            padding: 0; /* Quita el espacio interno de las celdas */
-            background-color: white;
+        .envelope-image {
+          width: 95% !important;
+          height: auto !important;
         }
-        p{
-            color:white;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            margin: 20px 5px 0 0;
-            text-align: center;
+        .tittle {
+          font-size: 20px !important;
         }
-        span{
-            font-weight: 600;
-            font-size: 14px;
-            color: white;
-        }
-        button{
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            color: #F4511E;
-            border-radius: 20px;
-            height: 40px;
-            margin: auto;
-            display: block;
-            text-align: center;
-            width: 250px;
-            border: none;
-        }
+        
+      }
     </style>
-</head>
-<body style="margin: 0; padding: 0;">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" margin="500px">
-        <tr>
-            <th>
-                <center>
-                <a href="https://dygav.es/login"
-                target="_blank"><img
-                    src="https://res.cloudinary.com/dc69f3e0o/image/upload/v1730915213/welcome-msg-dygav/dgdgtidzrx3zrfdcisap.png"
-                    width="200" height="50" border="0"
-                    alt="DYGAV Recovery password image"
-                    style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;"
-                    class="img-max"></a>
-                </center>
-            </th>
-        </tr>
-        <tr>
-            <td style="background-color: #F4511E; text-align: center; padding-top: 0px; padding-bottom: 0px;">
-                <img src="https://res.cloudinary.com/dnc8k8wwv/image/upload/v1734930771/residence-2219972_1280_r4jgcv.jpg" alt="destino"
-                style="width: 100%; object-fit: cover; object-position: center; max-width: 100%;">
-            </td>
-        </tr>
-        <tr >
-            <td style="color:white; text-align: center; font-style: normal; font-weight: 500; font-size: 24px; line-height: 29px;">
-                Hola, [FULLNAME].
-            </td>
-        </tr>
-        <tr>
-            <td><p>
-                Bienvenido a tu cuenta de propietario de DYGAV en donde podr&aacute;s gestionar tus alojamiento, llevar un seguimiento de tus finanzas, reservaciones y disfrutar de las &uacute;ltimas caracter&iacute;sticas de nuestro panel de control de propietarios.
-            </p></td>
-        </tr>
-        <tr>
-            <td>
-                <p>Hemos generado una contrase&ntilde;a temporal para ti. Por favor, accede a tu cuenta con las siguientes credenciales:</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: left"><p><span>Correo electr&oacute;nico:  </span>
-                [EMAIL]</p></td>
-        </tr>
-        <tr>
-            <td style="text-align: left">  <p><span>Contrase&ntilde;a temporal: </span>
-               [PASSWORD]</p></td>
-        </tr>
-        <tr>
-            <td style="background-color: #F4511E;  text-align: center; padding-top: 10px; padding-bottom: 10px;">
-                <button>
-                Acceder a mi cuenta &rarr;
-            </button>
-        </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Te recomendamos que, una vez accedas, cambies esta contrase&ntilde;a por una de tu preferencia para mayor seguridad.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Si tienes alguna duda o necesitas asistencia para acceder a la plataforma, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="background-color: white;">
-                <p style="color: #666666; font-weight: 600; font-size: 14px; line-height: 17px; margin: 20px 5px 0 0; text-align: center;">
-                    Avenida Gregorio Mara&ntilde;&oacute;n 7, 7 29
-                </p>
-                <p style="color: #666666; font-weight: 600; font-size: 14px; line-height: 17px; margin: 20px 5px 0 0; text-align: center;">Sitio web   |    dygav.es</p>
-            </td>
-        </tr>
-    </table>
-</body>
+    
+  </head>
+  <body style="margin: 0; background: #e0e0e0; text-align: center; font-family: Helvetica, Arial, sans-serif;">
+    <div style="padding: 30px 0;" class="image-header">
+      <a href="https://dygav.es/login" target="_blank">
+        <img
+          src="https://res.cloudinary.com/dc69f3e0o/image/upload/v1730915213/welcome-msg-dygav/dgdgtidzrx3zrfdcisap.png"
+          width="300"
+          height="100"
+          border="0"
+          alt="DYGAV Recovery password image"
+          style="display: block; margin: 0 auto; max-width: 100%; height: auto;"
+        />
+      </a>
+    </div>
+
+    <div
+      class="container"
+      style="
+        max-width: 800px;
+        width: 90%;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      "
+    >
+      <p class="tittle" style="font-size: 25px; color: #666666;">Hola, [FULLNAME].</p>
+
+      <p style="color: #666666;">
+        Bienvenido a tu cuenta de propietario de DYGAV en donde podrás gestionar tus alojamiento, llevar un seguimiento de tus finanzas, reservaciones y disfrutar de las últimas características de nuestro panel de control de propietarios.
+      </p>
+
+      <p style="color: #666666;">
+        Hemos generado una contraseña temporal para ti. Por favor, accede a tu cuenta con las siguientes credenciales:
+      </p>
+
+      <p style="color: #666666;">
+        <strong style="color: #f4511e;">Correo electrónico:</strong><br />
+        [EMAIL]
+      </p>
+
+      <p style="color: #666666;">
+        <strong style="color: #f4511e;">Contraseña temporal:</strong><br />
+        [PASSWORD]
+      </p>
+
+      <a href="https://dygav.es/login" target="_blank" class="button" style="display: inline-block; background-color: #f4511e; color: white; text-decoration: none; padding: 10px 30px; border-radius: 20px; margin: 20px auto;">
+        Acceder a mi cuenta →
+      </a>
+
+      <p style="color: #666666;">Te recomendamos que, una vez accedas, cambies esta contraseña por una de tu preferencia para mayor seguridad.</p>
+
+      <p style="color: #666666;">Si tienes alguna duda o necesitas asistencia para acceder a la plataforma, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+    </div>
+
+    <div
+      class="envelope-image"
+      style="
+        max-width: 850px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: -10px;
+        background: #f37954;
+        box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+      "
+    >
+      <img src="https://res.cloudinary.com/dnc8k8wwv/image/upload/v1743872119/Captura_de_pantalla_2025-04-05_105508_h3weyu.png" width="850" height="350" alt="Decoración estilo sobre" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+    </div>
+
+    <div style="width: 100%; text-align: center; padding: 20px 0; color: #666666;">
+      <p>Avenida Gregorio Marañón 7, 7 29</p>
+      <p>Sitio web | <a href="https://dygav.es" style="color: #f4511e; text-decoration: none;">dygav.es</a></p>
+    </div>
+  </body>
 </html>
